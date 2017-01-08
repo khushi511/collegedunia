@@ -1,0 +1,182 @@
+.flex-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.splash{
+	background-image: "";
+	background-color: #4c545f;
+	width: 100%;
+	background-size: cover;
+	background-position: 50% 50%;
+	height: 400px;
+	position: relative;
+	@extend .flex-center;
+
+}
+
+.card{
+	width: 65%;
+    height: auto;
+    position: absolute;
+    top: 100px;
+    left: 17.5%;
+
+    @media(max-width: 940px){
+    	width: 80%;
+    	left:10%;
+    }
+    @media(max-width: 700px){
+    	width: 90%;
+    	left:5%;
+    }
+
+
+    .description{
+		height: auto;
+		background-color: white;
+		display: flex;
+
+		@media(max-width: 530px){
+			flex-direction: column;
+		}
+
+		img{
+			padding: 35px;
+			width: 30%;
+			height: 300px;
+			@media(max-width: 530px){
+				width: auto;
+				padding: 25px;
+			}
+		}
+
+		.introduction{
+			padding: 50px 4% 0 0;
+			width: 100%;
+			box-sizing: border-box;
+			@media(max-width: 530px){
+				padding: 0 6% 30px;
+			}
+			.hello{
+				background-color: #26cc63;
+				font-size: 12px;
+				padding: 5px 10px;
+				display: inline;
+				color: #fff;
+				position: relative;
+				border-radius: 2px;
+
+				&:after{
+					position: absolute;
+					content: '';
+					border-top: 5px solid #26cc63;
+					border-right: 5px solid transparent;
+					border-bottom: 5px solid transparent;
+				    top: 100%;
+				    left: 22%;
+				    bottom: 25%;
+				}
+			}
+
+			h1{
+				font-size: 30px;
+				line-height: 1.5;
+				font-weight: 100;
+				margin-top: 5px;
+				font-family: 'Rubik', sans-serif;
+				@media(max-width: 530px){
+					font-size: 28px;
+				}
+				em{	
+					font-weight: 600;
+				}
+			}
+
+			h6{
+				opacity: 0.6;
+			}
+
+			hr{
+				margin: 15px 0 15px 0;
+				border-top: 1px solid #c8c8b5;
+			}
+			.detail{
+				li{
+					font-size: 14px;
+					margin:0 0 10px 0;
+					color: #9da0a7;
+					display: flex;
+					line-height: 1.3;
+
+					.label{
+						min-width:30%;
+						display: inline-block;
+						text-transform: uppercase;
+						font-size:10px;
+						font-weight: 600;
+						color: #000;
+						opacity: 0.7;
+
+						&.vacation{
+							background-color: #26cc63;
+							padding: 3px 4px;
+							min-width: 19%;
+							font-size: 10px;
+							margin-right: 9%;
+							color: #fff;
+							text-transform: none;
+							text-align: center;
+						}
+					}
+
+					.calendar{
+						@extend .flex-center;
+
+						.svg-wrap{
+							margin-right: 5px;
+							width: 20px;
+							height: 20px;
+							svg{
+								width: 20px;
+								height: 20px;
+							}
+						}
+					}
+				}
+
+			}
+		}
+	}
+
+	.social-media-icons{
+		background-color: #26cc63;
+		padding: 20px 40px;
+		@extend .flex-center;
+		
+
+		.icon{
+			padding: 0 20px;
+			@media(max-width: 530px){
+				padding: 0 10px;
+			}
+			.svg-wrap{
+				fill: white;
+				svg{
+					width: 18px;
+					height: 18px;
+				}
+			}
+
+			&:nth-child(4){
+				.svg-wrap{
+					svg{
+						height: 23px;
+						width: 23px;
+						margin-top: 3px;
+					}
+				}
+			}
+		}
+	}
+}

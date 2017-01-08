@@ -1,0 +1,32 @@
+.footer{
+		padding: 20px 40px;
+		padding-bottom: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+
+		.icon{
+			padding: 0 20px;
+			@media(max-width: 530px){
+				padding: 0 15px;
+			}
+			.svg-wrap{
+				fill: #a7a4a4;
+				svg{
+					width: 15px;
+					height: 15px;
+				}
+			}
+
+			&:nth-child(4){
+				.svg-wrap{
+					svg{
+						height: 15px;
+						width: 15px;
+						margin-top: 3px;
+					}
+				}
+			}
+		}
+	}

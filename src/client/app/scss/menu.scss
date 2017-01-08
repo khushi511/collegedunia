@@ -1,0 +1,94 @@
+.menu{
+	display: flex;
+	height: 60px;
+    background: #4c545f;
+    justify-content: space-between;
+    align-items: center;
+	position: fixed;
+	padding:0 30px;
+	box-sizing: border-box;
+	width: 100%;
+	z-index: 10;
+
+	@media(max-width: 930px){
+		padding: 0 15px;
+	}
+	.logo{
+		float: left;
+		font-weight: bold;
+		padding-left: 30px;
+		text-transform: capitalize;
+		font-size: 28px;
+		color: white;
+		@media(max-width: 930px){
+			padding-left: 0px;
+		}
+	}
+
+	.hamburger{
+		fill:white;
+		border-radius: 50%;
+		float: right;
+		display: none;
+		@media(max-width: 830px){
+			display: block;
+		}
+		svg{
+			width: 50px;
+			height: 50px;
+		}
+	}
+	
+	.menu-right{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		float: right;
+		@media(max-width: 830px){
+			display: none;
+			float: none;
+		}
+		&.show{
+			@media(max-width: 830px){
+				display: flex;
+				flex-direction: column;
+				background: black;
+				opacity: 0.6;
+				position: absolute;
+				top: 60px;
+				left: 0;
+				width: 100%;
+
+				li{
+					padding: 10px 0;
+				}
+			}
+		}
+		.active{
+			border-bottom: 2px solid #26cc63;
+			padding-bottom: 10px;
+		}
+		.menu-item{
+			color: white;
+			font-size: 12px;
+			margin-left: 20px;
+			text-decoration: none;
+			text-transform: uppercase;
+			@media(max-width: 930px){
+				margin-left: 10px;
+			}
+
+			.svg-wrap{
+				margin-left: 20px;
+				fill: white;
+				border: 1px solid white;
+				svg{
+					width: 25px;
+					height: 25px;
+					padding: 10px;
+				}
+			}
+		}
+
+	}
+}
