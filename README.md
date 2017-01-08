@@ -1,6 +1,6 @@
 # collegedunia-portfolio
 
-I is a simple portfolio page.
+It is a simple portfolio page.
 
 To run this project , you must have "NODE" installed on your system. If not so, first install "NODE" on your system.
 
