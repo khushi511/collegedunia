@@ -10,7 +10,7 @@ Then after cloning this repo, and entering into folder "collegedunia"(in your te
 //in one terminal window
 --->run: " webpack-dev-server --inline --content-base src/client/" 
 //open another terminal window
----> run "npm build dev"
+---> run "npm run dev"
 ---> open "localhost:8080" in your browser
 
 The UI has been designed using Reactjs, Saas.
