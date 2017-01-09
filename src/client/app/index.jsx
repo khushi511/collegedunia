@@ -1,7 +1,7 @@
 import React from 'react';
 import {render} from 'react-dom';
 
-require("./index.scss");
+import "./index.scss";
 import {About} from './jsx/about.jsx'
 import {Menu} from './jsx/menu.jsx'
 import {
